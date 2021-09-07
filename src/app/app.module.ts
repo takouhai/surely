@@ -13,7 +13,7 @@ import { CallToActionComponent } from './calltoaction/calltoaction.component';
     NavBarComponent,
     SearchbarComponent,
     FooterComponent,
-    CallToActionComponent
+    CallToActionComponent,
   ],
   imports: [BrowserModule],
   providers: [],
