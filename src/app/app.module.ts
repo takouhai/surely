@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CallToActionComponent } from './calltoaction/calltoaction.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
     NavBarComponent,
     SearchbarComponent,
     FooterComponent,
+    CallToActionComponent
   ],
   imports: [BrowserModule],
   providers: [],
