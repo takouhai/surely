@@ -2,7 +2,7 @@
 
 - Main features:
   - Updated main navbar to have linked Angular data
-  - Added cards for job listings
+  - Added cards for job listings with linked Angular data
 
 # The style update (9/6/2021)
 
