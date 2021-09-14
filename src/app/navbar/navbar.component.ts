@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.sass'],
 })
-export class NavBarComponent {}
+export class NavBarComponent {
+  messages: number = 3;
+  notifications: number = 5;
+  email: string = 'indeed@example.org';
+}

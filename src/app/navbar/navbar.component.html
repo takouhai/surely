@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-1">
-  <div class="container-fluid bg-white border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light p-1 border-bottom">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#"
       ><img src="assets/logo.svg" alt="indeed logo"
     /></a>
@@ -14,20 +14,103 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="d-flex justify-self-start navbar-nav me-auto">
-        <a class="nav-link text-black active" aria-current="page" href="#"
-          >Find jobs</a
-        >
-        <a class="nav-link text-black" href="#">Company reviews</a>
-        <a class="nav-link text-black" href="#">Find salaries</a>
+        <a class="nav-link text-black active py-2" href="#">Find jobs</a>
+        <a class="nav-link text-black py-2" href="#">Company reviews</a>
+        <a class="nav-link text-black py-2" href="#">Find salaries</a>
       </div>
       <div class="d-flex justify-self-end navbar-nav">
-        <a class="nav-link text-black" aria-current="page" href="#"
-          >Upload your resume</a
+        <button type="button" class="btn btn-link position-relative">
+          <i class="bi bi-chat-left-text-fill fs-4"></i>
+          <span
+            class="
+              position-absolute
+              top-50
+              start-100
+              translate-middle
+              badge
+              rounded-pill
+              bg-danger
+            "
+          >
+            {{ messages }}
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+
+        <button type="button" class="btn btn-link position-relative">
+          <i class="bi bi-bell-fill fs-4"></i>
+          <span
+            class="
+              position-absolute
+              top-50
+              start-100
+              translate-middle
+              badge
+              rounded-pill
+              bg-danger
+            "
+          >
+            {{ notifications }}
+            <span class="visually-hidden">unread notifications</span>
+          </span>
+        </button>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link position-relative dropdown-toggle"
+            type="button"
+            id="userInfo"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person-fill fs-4"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="userInfo">
+            <li class="p-3">
+              <h6>{{ email }}</h6>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-file-earmark-text-fill"></i> Profile</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-heart-fill"></i> My jobs</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-star-fill"></i> My reviews</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-envelope-fill"></i> Email preferences</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-search"></i> Search preferences</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-gear-fill"></i> Settings</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="bi bi-question-circle-fill"></i> Help center</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-link text-black d-flex align-items-center" href="#"
+          >Employers / Post Job</a
         >
-        <a class="nav-link text-primary fw-bold" href="#">Sign in</a>
-        <a class="nav-link text-black" href="#">Employers / Post Job</a>
       </div>
     </div>
   </div>
