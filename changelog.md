@@ -3,6 +3,7 @@
 - Main features:
   - Updated main navbar to have linked Angular data
   - Added cards for job listings with linked Angular data
+  - Added placeholder div for more information on each card
 
 # The style update (9/6/2021)
 
@@ -19,5 +20,5 @@
 - Main features:
   - Added navbar
   - Added footer
-- Bonus features
+- Bonus features:
   - Add prettier for code standardization
