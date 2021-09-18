@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Listing } from './../listing';
-import { LISTINGS } from './../mock-listings';
+import { Listing } from './listing';
+import { LISTINGS } from './mock-listings';
 
 @Component({
   selector: 'surely-job-listings',

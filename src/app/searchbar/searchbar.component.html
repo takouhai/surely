@@ -1,143 +1,51 @@
-<nav class="navbar navbar-light bg-white">
-  <div class="container-fluid px-0">
-    <div class="d-flex col-lg-4 col-sm-12 my-3">
-      <div class="input-group">
-        <label class="input-group-text" for="searchText">What</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="job title, keywords, or company"
-          aria-label="Search text"
-          aria-describedby="searchText"
-        />
-        <button class="btn btn-outline-secondary" type="button" id="searchText">
-          <i class="bi bi-search"></i>
+<div class="container-fluid border-bottom">
+  <div class="container">
+  <nav class="navbar navbar-light bg-white">
+    <div class="container-fluid px-0">
+      <div class="d-flex col-lg-4 col-sm-12 my-3">
+        <div class="input-group">
+          <label class="input-group-text" for="searchText">What</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="job title, keywords, or company"
+            aria-label="Search text"
+            aria-describedby="searchText"
+          />
+          <button class="btn btn-outline-secondary" type="button" id="searchText">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex col-lg-4 col-sm-12 my-3">
+        <div class="input-group">
+          <label class="input-group-text" for="searchLocation">Where</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Townsville, USA"
+            aria-label="Search location"
+            aria-describedby="searchLocation"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="searchLocation"
+          >
+            <i class="bi bi-geo-alt"></i>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex my-3">
+        <button type="button" class="btn btn-primary fw-bold">Find jobs</button>
+      </div>
+      <div class="d-flex my-3">
+        <button type="button" class="btn btn-link text-secondary">
+          Advanced Search
         </button>
       </div>
     </div>
-    <div class="d-flex col-lg-4 col-sm-12 my-3">
-      <div class="input-group">
-        <label class="input-group-text" for="searchLocation">Where</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Townsville, USA"
-          aria-label="Search location"
-          aria-describedby="searchLocation"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="searchLocation"
-        >
-          <i class="bi bi-geo-alt"></i>
-        </button>
-      </div>
-    </div>
-    <div class="d-flex my-3">
-      <button type="button" class="btn btn-primary fw-bold">Find jobs</button>
-    </div>
-    <div class="d-flex my-3">
-      <button type="button" class="btn btn-link text-secondary">
-        Advanced Job Search
-      </button>
-    </div>
-  </div>
-</nav>
-<nav class="navbar navbar-light bg-white">
-  <div class="container-fluid">
-    <div class="row mb-6">
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Date Posted"
-      >
-        <option disabled selected>Date Posted</option>
-        <option value="hours">Last 24 hours</option>
-        <option value="days">Last 3 days</option>
-        <option value="week">Last 7 days</option>
-        <option value="fortnight">Last 14 days</option>
-        <option value="previous">Since your last visit</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Date Posted"
-      >
-        <option disabled selected>Remote</option>
-        <option value="remote">Remote</option>
-        <option value="temp">Temporarily remote</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Location"
-      >
-        <option value="0">Exact location only</option>
-        <option value="5" selected>within 5 miles</option>
-        <option value="10">within 10 miles</option>
-        <option value="15">within 15 miles</option>
-        <option value="20">within 20 miles</option>
-        <option value="25">within 25 miles</option>
-        <option value="50">within 50 miles</option>
-        <option value="100">within 100 miles</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Salary Estimate"
-      >
-        <option disabled selected>Salary Estimate</option>
-        <option value="20000">$20,000</option>
-        <option value="25000">$25,000</option>
-        <option value="30000">$30,000</option>
-        <option value="35000">$35,000</option>
-        <option value="60000">$60,000</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Job Type"
-      >
-        <option disabled selected>Job Type</option>
-        <option value="full-time">Full Time</option>
-        <option value="part-time">Part Time</option>
-        <option value="contract">Contract</option>
-        <option value="temp">Temporary</option>
-        <option value="intern">Internship</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Shifts and Schedules"
-      >
-        <option disabled selected>Shifts & Schedules</option>
-        <option value="a">lots of 'em</option>
-        <option value="b">mhm</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Location"
-      >
-        <option disabled selected>Location</option>
-        <option value="morgantown">Morgantown, WV</option>
-        <option value="townsville">Townsville, USA</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Company"
-      >
-        <option disabled selected>Company</option>
-        <option value="WVU">West Virginia University</option>
-        <option value="Leidos">Leidos</option>
-      </select>
-      <select
-        class="form-select col-auto btn-light me-1 my-1"
-        aria-label="Experience Level"
-      >
-        <option disabled selected>Experience Level</option>
-        <option value="1">LEVEL 1</option>
-        <option value="2">LEVEL 2</option>
-        <option value="3">LEVEL 3</option>
-        <option value="4">LEVEL 4</option>
-        <option value="5">LEVEL 5</option>
-        <option value="BOSS">BOSS</option>
-        <option value="EPILOGUE">EPILOGUE</option>
-      </select>
-    </div>
-  </div>
-</nav>
+  </nav>
+  <surely-advanced-search></surely-advanced-search>
+</div>
+</div>
