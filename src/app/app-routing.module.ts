@@ -12,11 +12,11 @@ const routes: Routes = [
   { path: 'certifications', component: CertificationsComponent },
   { path: 'reviews', component: ReviewsComponent },
   { path: 'salaries', component: SalariesComponent },
-  { path: '', redirectTo: '/frontpage', pathMatch: 'full' }
+  { path: '', redirectTo: '/frontpage', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
