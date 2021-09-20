@@ -1,6 +1,28 @@
-<surely-searchbar></surely-searchbar>
+<div class="container-fluid">
+  <surely-searchbar></surely-searchbar>
 
-<div class="text-center">
-<p><a href="#">Post your resume</a> - It only takes a few seconds</p>
-<p>Employers: <a href="#">Post jobs</a>, reach applicants, and interview candidates</p>
+  <div class="text-center">
+    <p><a href="#">Post your resume</a> - It only takes a few seconds</p>
+    <p>
+      Employers: <a href="#">Post jobs</a>, reach applicants, and interview
+      candidates
+    </p>
+  </div>
+  <hr />
+  <div class="container-sm text-center">
+    <h3>Popular searches</h3>
+    <span *ngFor="let search of searches">
+      <button type="button" class="btn btn-light m-2">
+        <i class="bi bi-search"></i> {{ search.title }}
+      </button>
+    </span>
+  </div>
+  <div class="text-center my-5">
+    <p>
+      Indeed helps people get jobs:
+      <a href="#">Over 16 million stories shared</a>
+    </p>
+    <p>Indeed también está disponible en <a href="#">español</a></p>
+    <p>What's trending on Indeed: nothing</p>
+  </div>
 </div>
