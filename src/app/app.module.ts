@@ -13,6 +13,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { SalariesComponent } from './salaries/salaries.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { AdvancedComponent } from './searchbar/advanced/advanced.component';
+import { CertSearchbarComponent } from './certifications/cert-searchbar/cert-searchbar.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AdvancedComponent } from './searchbar/advanced/advanced.component';
     SalariesComponent,
     CertificationsComponent,
     AdvancedComponent,
+    CertSearchbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
