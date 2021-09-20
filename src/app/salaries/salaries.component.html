@@ -1,1 +1,49 @@
-<p>salaries works!</p>
+<div class="container-fluid bg-salaries p-5">
+  <h2>Find a career you'll love</h2>
+  <p>
+    Explore which careers have the highest job satisfaction, best salaries, and
+    more.
+  </p>
+  <div class="row">
+    <div class="col-md-auto bg-white p-4">
+      <div class="container-fluid">
+        <form class="row g-3">
+          <div class="col-md-5">
+            <label for="inputWhat" class="form-label fw-bold fs-5">What</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="inputWhat" />
+
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="searchLocation"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <label for="inputWhere" class="form-label fw-bold fs-5"
+              >Where</label
+            >
+            <div class="input-group">
+              <input type="text" class="form-control" id="inputWhere" />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="searchLocation"
+              >
+                <i class="bi bi-geo-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex align-items-end">
+            <button type="button" class="btn btn-primary fw-bold">
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

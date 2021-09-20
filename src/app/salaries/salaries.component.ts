@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-salaries',
+  selector: 'surely-salaries',
   templateUrl: './salaries.component.html',
   styleUrls: ['./salaries.component.sass'],
 })
