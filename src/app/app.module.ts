@@ -14,6 +14,7 @@ import { SalariesComponent } from './salaries/salaries.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { AdvancedComponent } from './searchbar/advanced/advanced.component';
 import { CertSearchbarComponent } from './certifications/cert-searchbar/cert-searchbar.component';
+import { ListingCardComponent } from './job-listings/listing-card/listing-card.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CertSearchbarComponent } from './certifications/cert-searchbar/cert-sea
     CertificationsComponent,
     AdvancedComponent,
     CertSearchbarComponent,
+    ListingCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

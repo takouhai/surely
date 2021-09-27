@@ -1,6 +1,9 @@
-import { Listing } from './listing';
+import { Listing } from './listing-card/listing.model';
 
-export const LISTINGS: Listing[] = [
+let rightNow = new Date();
+let currentDate = rightNow.toLocaleDateString("en-US")
+
+export const mock_listings: Listing[] = [
   {
     id: 1,
     title: 'Frontend Developer',
@@ -9,7 +12,7 @@ export const LISTINGS: Listing[] = [
     zipcode: 26505,
     type: 'In-person',
     requirements: 'CS Degree',
-    date: Date.now(),
+    date: currentDate,
   },
   {
     id: 2,
@@ -19,7 +22,7 @@ export const LISTINGS: Listing[] = [
     zipcode: 95014,
     type: 'Remote',
     requirements: 'CS Degree',
-    date: Date.now(),
+    date: currentDate,
   },
   {
     id: 3,
@@ -29,7 +32,7 @@ export const LISTINGS: Listing[] = [
     zipcode: 26506,
     type: 'In-person',
     requirements: "Bachelor's Degree",
-    date: Date.now(),
+    date: currentDate,
   },
   {
     id: 4,
@@ -39,7 +42,7 @@ export const LISTINGS: Listing[] = [
     zipcode: 26504,
     type: 'In-person/Remote',
     requirements: "Bachelor's Degree",
-    date: Date.now(),
+    date: currentDate,
   },
   {
     id: 5,
@@ -49,6 +52,6 @@ export const LISTINGS: Listing[] = [
     zipcode: 26505,
     type: 'In-person',
     requirements: 'CS Degree',
-    date: Date.now(),
+    date: currentDate,
   },
 ];

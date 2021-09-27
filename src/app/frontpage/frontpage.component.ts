@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Search } from './search';
+import { Search } from './search.model';
 import { SEARCHES } from './popular-searches';
 
 @Component({

@@ -3,22 +3,15 @@
   <div class="row">
     <div class="col">
       <div class="cards" *ngFor="let listing of listings">
-        <div class="card my-2">
-          <div class="card-body">
-            <h5 class="card-title">{{ listing.title }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ listing.company }}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">
-              {{ listing.location }} {{ listing.zipcode }} • {{ listing.type }}
-            </h6>
-            <p class="card-text">
-              {{ listing.requirements }}
-            </p>
-            <a href="#" class="card-link">Apply</a>
-          </div>
-          <div class="card-footer text-muted">
-            {{ listing.date | date }}
-          </div>
-        </div>
+        <surely-listing-card
+          title="{{ listing.title }}"
+          company="{{ listing.company }}"
+          location="{{ listing.location }}"
+          zipcode="{{ listing.zipcode }}"
+          type="{{ listing.type }}"
+          requirements="{{ listing.requirements }}"
+          date={{listing.date}}
+        ></surely-listing-card>
       </div>
     </div>
     <div class="col">

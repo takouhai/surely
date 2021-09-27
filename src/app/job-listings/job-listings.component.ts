@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Listing } from './listing';
-import { LISTINGS } from './mock-listings';
+import { Listing } from './listing-card/listing.model';
+import { mock_listings } from './mock-listings';
 
 @Component({
   selector: 'surely-job-listings',
@@ -8,14 +8,13 @@ import { LISTINGS } from './mock-listings';
   styleUrls: ['./job-listings.component.sass'],
 })
 export class JobListingsComponent implements OnInit {
-  listings = LISTINGS;
-  selectedListing?: Listing;
-
-  constructor() {}
+  listings: Listing[] = [];
 
   ngOnInit() {}
 
-  onSelect(listing: Listing): void {
-    this.selectedListing = listing;
+  constructor() {
+    for (var listing of mock_listings) {
+      this.listings.push(new Listing(listing));
+    }
   }
 }

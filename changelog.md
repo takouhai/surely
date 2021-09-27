@@ -1,12 +1,13 @@
 # The routing update (9/21/2021)
+
 - Main features:
   - Integrated routing backend from Angular core
-  - Added view scaffolding and routes for the following pages: 
+  - Added view scaffolding and routes for the following pages:
     - Certifications
     - Front page
     - Reviews
     - Salaries
-- Bonus features: 
+- Bonus features:
   - Modified styles to look more like source
   - Changed searchbar to be more modular and reusable for job listings view
 
