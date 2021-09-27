@@ -1,3 +1,10 @@
+# The model update (9/28/2021)
+
+- Main features:
+  - Created a new `listing-card` component that modularizes the job listing's listing card
+  - Ported the old data model from `mock-listings`/`listings.ts` to Angular's native model layout
+  - Rebound everything in `job-listings.compontent.html`
+
 # The routing update (9/21/2021)
 
 - Main features:
