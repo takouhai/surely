@@ -1,3 +1,8 @@
+# The ACTUAL data update (10/5/2021)
+
+- Main features:
+  - Refactored the user information in the `navbar` to obtain data from a firebase backend database
+
 # The model update (9/28/2021)
 
 - Main features:
