@@ -1,7 +1,7 @@
 import { Listing } from './listing-card/listing.model';
 
 let rightNow = new Date();
-let currentDate = rightNow.toLocaleDateString("en-US")
+let currentDate = rightNow.toLocaleDateString('en-US');
 
 export const mock_listings: Listing[] = [
   {

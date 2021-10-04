@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/navbar.component';
@@ -32,7 +33,7 @@ import { ListingCardComponent } from './job-listings/listing-card/listing-card.c
     CertSearchbarComponent,
     ListingCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
