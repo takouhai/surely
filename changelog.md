@@ -1,3 +1,8 @@
+# The RTDB update (10/19/2021)
+
+- Main features: 
+  - Refactored the job listing information in the `job-listings.component.ts` to now grab from a new `listings.service.ts` that provides realtime data
+
 # The ACTUAL data update (10/5/2021)
 
 - Main features:
