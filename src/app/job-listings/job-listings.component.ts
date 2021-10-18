@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from './listing-card/listing.model';
-import { mock_listings } from './mock-listings';
+import { ListingsService } from './listings.service';
 
 @Component({
   selector: 'surely-job-listings',
@@ -8,13 +8,19 @@ import { mock_listings } from './mock-listings';
   styleUrls: ['./job-listings.component.sass'],
 })
 export class JobListingsComponent implements OnInit {
-  listings: Listing[] = [];
+  myListings: Listing[] | undefined;
 
-  ngOnInit() {}
+  constructor(private listingsService:ListingsService) {
+  }
 
-  constructor() {
-    for (var listing of mock_listings) {
-      this.listings.push(new Listing(listing));
-    }
+  ngOnInit(): void {
+    console.log("Registering showListings as a subscriber.");
+    this.showListings();
+  }
+  showListings() {
+    this.listingsService.getListings().subscribe((data: Listing[]) => {
+      console.log(data);
+      this.myListings = data;
+    });;
   }
 }
