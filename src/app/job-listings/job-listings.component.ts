@@ -10,17 +10,16 @@ import { ListingsService } from './listings.service';
 export class JobListingsComponent implements OnInit {
   myListings: Listing[] | undefined;
 
-  constructor(private listingsService:ListingsService) {
-  }
+  constructor(private listingsService: ListingsService) {}
 
   ngOnInit(): void {
-    console.log("Registering showListings as a subscriber.");
+    console.log('Registering showListings as a subscriber.');
     this.showListings();
   }
   showListings() {
     this.listingsService.getListings().subscribe((data: Listing[]) => {
       console.log(data);
       this.myListings = data;
-    });;
+    });
   }
 }
