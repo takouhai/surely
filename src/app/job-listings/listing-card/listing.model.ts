@@ -1,5 +1,4 @@
 export class Listing {
-  id: number;
   title: string;
   company: string;
   location: string;
@@ -9,7 +8,6 @@ export class Listing {
   date: string;
 
   constructor({
-    id,
     title,
     company,
     location,
@@ -18,7 +16,6 @@ export class Listing {
     requirements,
     date,
   }: {
-    id: number;
     title: string;
     company: string;
     location: string;
@@ -27,7 +24,6 @@ export class Listing {
     requirements: string;
     date: string;
   }) {
-    this.id = id;
     this.title = title;
     this.company = company;
     this.location = location;

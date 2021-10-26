@@ -1,1 +1,32 @@
-<p>listing-form works!</p>
+<div class="container p-3">
+  <form #postForm="ngForm" (ngSubmit)="newListing(postForm.value)">
+    <div class="input-group mb-3">
+      <span class="input-group-text">Job Title</span>
+      <input type="text" class="form-control" ngModel name="title" />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Company</span>
+      <input type="text" class="form-control" ngModel name="company" />
+      <span class="input-group-text">Type</span>
+      <select class="form-select" ngModel name="type">
+        <option value="In-person" selected>In-person</option>
+        <option value="Remote">Remote</option>
+      </select>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Location</span>
+      <input type="text" class="form-control" ngModel name="location" />
+      <span class="input-group-text">Zip Code</span>
+      <input type="number" class="form-control" ngModel name="zipcode" />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Requirements</span>
+      <input type="text" class="form-control" ngModel name="requirements" />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Date</span>
+      <input type="date" class="form-control" ngModel name="date" />
+    </div>
+    <button class="btn btn-primary" type="submit">Add new listing</button>
+  </form>
+</div>

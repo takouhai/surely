@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Listing } from './../listing-card/listing.model';
+import { ListingsService } from './../listings.service';
 
 @Component({
   selector: 'surely-listing-form',
@@ -6,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listing-form.component.sass'],
 })
 export class ListingFormComponent implements OnInit {
-  constructor() {}
+  constructor(private listingsService: ListingsService) {}
 
   ngOnInit(): void {}
+
+  newListing(data: Listing) {
+    this.listingsService.addListing(data).subscribe((data) => {
+      console.log('New information sent to backend');
+    });
+  }
 }

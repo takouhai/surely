@@ -17,4 +17,8 @@ export class ListingsService {
     );
     return listings;
   }
+
+  addListing(data: Listing) {
+    return this.http.post(this.baseUrl + this.listingEndpoint, data);
+  }
 }

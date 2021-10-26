@@ -7,8 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ListingCardComponent {
   @Input()
-  id!: number;
-  @Input()
   title!: string;
   @Input()
   company!: string;

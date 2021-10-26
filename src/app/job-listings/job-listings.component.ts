@@ -18,8 +18,7 @@ export class JobListingsComponent implements OnInit {
   }
   showListings() {
     this.listingsService.getListings().subscribe((data: Listing[]) => {
-      console.log(data);
-      this.myListings = data;
+      this.myListings = Object.values(data);
     });
   }
 }
