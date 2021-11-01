@@ -18,6 +18,9 @@ import { CertSearchbarComponent } from './certifications/cert-searchbar/cert-sea
 import { JobListingsComponent } from './job-listings/job-listings.component';
 import { ListingCardComponent } from './job-listings/listing-card/listing-card.component';
 import { ListingFormComponent } from './job-listings/listing-form/listing-form.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,7 @@ import { ListingFormComponent } from './job-listings/listing-form/listing-form.c
     ListingCardComponent,
     ListingFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase())],
   providers: [],
   bootstrap: [AppComponent],
 })

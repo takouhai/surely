@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "surely-app": {
+      "hosting": {
+        "surely": [
+          "surely-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "surely-app"
+  }
+}
