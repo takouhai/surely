@@ -1,3 +1,10 @@
+# The Firebase Update (11/2/2021) 
+
+- Main features: 
+  - Created initial integration of Firebase DB (AngularFire) in `database.service.ts`
+- Bonus features: 
+  - Shows data from backend in `listings` from new `database.service.ts`
+
 # The POST update (10/26/2021)
 
 - Main features:
