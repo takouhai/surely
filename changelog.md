@@ -1,8 +1,8 @@
-# The POST update (10/26/2021) 
+# The POST update (10/26/2021)
 
-- Main features: 
-  - Added a new `/listings/new` view that has a form to add a new listing 
-- Bonus features: 
+- Main features:
+  - Added a new `/listings/new` view that has a form to add a new listing
+- Bonus features:
   - Changed the way that the `listing` model stored IDs and the database interaction therin in `job-listings.component`
 
 # The RTDB update (10/19/2021)

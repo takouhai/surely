@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from './listing-card/listing.model';
 import { ListingsService } from './listings.service';
+import { DatabaseService } from '../services/database.service';
 
 @Component({
   selector: 'surely-job-listings',
@@ -10,7 +11,12 @@ import { ListingsService } from './listings.service';
 export class JobListingsComponent implements OnInit {
   myListings: Listing[] | undefined;
 
-  constructor(private listingsService: ListingsService) {}
+  constructor(
+    private listingsService: ListingsService,
+    private dbService: DatabaseService
+  ) {
+    dbService.showData();
+  }
 
   ngOnInit(): void {
     console.log('Registering showListings as a subscriber.');
