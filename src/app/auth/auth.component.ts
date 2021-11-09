@@ -33,7 +33,7 @@ export class AuthComponent {
 
     this.authObservable.subscribe(
       (data: AuthResponse) => {
-        console.log(data);
+        alert("Logged in as " + data.email + ". Welcome back!");
       },
       (error) => {
         console.log(error.error);

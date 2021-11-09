@@ -1,4 +1,3 @@
-<p *ngIf="myInfo == undefined">Failed fetching user info</p>
 <nav class="navbar navbar-expand-lg navbar-light p-1 border-bottom">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink=""
@@ -30,6 +29,7 @@
           >Find certifications</a
         >
       </div>
+      <a class="d-flex justify-self-end navbar-nav" *ngIf="myInfo == undefined" routerLink="/auth">Login</a>
       <div
         class="d-flex justify-self-end navbar-nav"
         *ngIf="myInfo != undefined"

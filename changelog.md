@@ -1,6 +1,8 @@
 # The Authentication Update (11/08/2021)
 
-
+- Main features:
+  - Add Firebase user/email authentication
+  - Add `/auth` path with login form
 
 # The Firebase Update (11/02/2021)
 
