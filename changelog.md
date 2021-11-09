@@ -1,8 +1,12 @@
-# The Firebase Update (11/2/2021) 
+# The Authentication Update (11/08/2021)
 
-- Main features: 
+
+
+# The Firebase Update (11/02/2021)
+
+- Main features:
   - Created initial integration of Firebase DB (AngularFire) in `database.service.ts`
-- Bonus features: 
+- Bonus features:
   - Shows data from backend in `listings` from new `database.service.ts`
 
 # The POST update (10/26/2021)
@@ -17,19 +21,19 @@
 - Main features:
   - Refactored the job listing information in the `job-listings.component.ts` to now grab from a new `listings.service.ts` that provides realtime data
 
-# The ACTUAL data update (10/5/2021)
+# The ACTUAL data update (10/05/2021)
 
 - Main features:
   - Refactored the user information in the `navbar` to obtain data from a firebase backend database
 
-# The model update (9/28/2021)
+# The model update (09/28/2021)
 
 - Main features:
   - Created a new `listing-card` component that modularizes the job listing's listing card
   - Ported the old data model from `mock-listings`/`listings.ts` to Angular's native model layout
   - Rebound everything in `job-listings.compontent.html`
 
-# The routing update (9/21/2021)
+# The routing update (09/21/2021)
 
 - Main features:
   - Integrated routing backend from Angular core
@@ -42,14 +46,14 @@
   - Modified styles to look more like source
   - Changed searchbar to be more modular and reusable for job listings view
 
-# The data update (9/14/2021)
+# The data update (09/14/2021)
 
 - Main features:
   - Updated main navbar to have linked Angular data
   - Added cards for job listings with linked Angular data
   - Added placeholder div for more information on each card
 
-# The style update (9/6/2021)
+# The style update (09/06/2021)
 
 - Main features:
   - Updated title of website to look less like a default app
@@ -59,7 +63,7 @@
 - Bonus features:
   - Add images for reference (i'm tired of pulling up indeed.com every ten seconds)
 
-# Initial release (8/25/2021)
+# Initial release (08/25/2021)
 
 - Main features:
   - Added navbar

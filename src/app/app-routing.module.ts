@@ -6,6 +6,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SalariesComponent } from './salaries/salaries.component';
 import { ListingFormComponent } from './job-listings/listing-form/listing-form.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   { path: 'frontpage', component: FrontpageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'certifications', component: CertificationsComponent },
   { path: 'reviews', component: ReviewsComponent },
   { path: 'salaries', component: SalariesComponent },
+  { path: 'auth', component: AuthComponent },
   { path: '', redirectTo: '/frontpage', pathMatch: 'full' },
 ];
 
